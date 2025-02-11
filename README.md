@@ -1,4 +1,4 @@
 # MSA
 Hexagonal Architecture Template
 - Kafka
-- Spring Batch
+- Spring Batch + Spring Quartz
