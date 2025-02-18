@@ -28,9 +28,9 @@ services:
     networks:
       - msa_network
     environment:
-      - SPRINGDOC_API-DOCS_PATH=/user/api-docs
-      - SPRINGDOC_SWAGGER-UI_PATH=/user/swagger-ui
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-user:33061/user_db?useSSL=false&allowPublicKeyRetrieval=true
+      - SPRINGDOC_API-DOCS_PATH=/users/api-docs
+      - SPRINGDOC_SWAGGER-UI_PATH=/users/swagger-ui
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql-user:3306/user_db?useSSL=false&allowPublicKeyRetrieval=true
       - SPRING_DATASOURCE_USERNAME=user_id
       - SPRING_DATASOURCE_PASSWORD=user_pw
       - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.MySQL8Dialect
