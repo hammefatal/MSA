@@ -1,5 +1,6 @@
 package home.hammefatal.msa.userservice.application.service;
 
+import home.hammefatal.msa.common.roletype.UserScenario;
 import home.hammefatal.msa.userservice.application.port.in.SignupCommand;
 import home.hammefatal.msa.userservice.application.port.in.SignupService;
 import home.hammefatal.msa.userservice.application.port.out.SignupPort;
@@ -13,7 +14,7 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @Transactional
-@Component
+@UserScenario
 public class Signup implements SignupService {
 
     private final SignupPort signupPort;

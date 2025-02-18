@@ -1,5 +1,6 @@
 package home.hammefatal.msa.userservice.application.service;
 
+import home.hammefatal.msa.common.roletype.UserScenario;
 import home.hammefatal.msa.userservice.application.port.in.ModifyUserCommand;
 import home.hammefatal.msa.userservice.application.port.in.ModifyUserService;
 import home.hammefatal.msa.userservice.application.port.out.ModifyUserPort;
@@ -12,7 +13,7 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @Transactional
-@Component
+@UserScenario
 public class ModifyUser implements ModifyUserService {
 
     private final ModifyUserPort modifyUserPort;

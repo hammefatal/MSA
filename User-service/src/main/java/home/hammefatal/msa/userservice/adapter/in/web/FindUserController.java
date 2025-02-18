@@ -2,7 +2,6 @@ package home.hammefatal.msa.userservice.adapter.in.web;
 
 import home.hammefatal.msa.userservice.application.port.in.FindUserService;
 import home.hammefatal.msa.userservice.application.port.in.SearchUserCommand;
-import home.hammefatal.msa.userservice.application.port.in.SignupCommand;
 import home.hammefatal.msa.userservice.domain.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

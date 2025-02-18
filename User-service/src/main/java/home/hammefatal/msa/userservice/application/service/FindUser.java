@@ -1,11 +1,11 @@
 package home.hammefatal.msa.userservice.application.service;
 
+import home.hammefatal.msa.common.roletype.UserScenario;
 import home.hammefatal.msa.userservice.application.port.in.FindUserService;
 import home.hammefatal.msa.userservice.application.port.in.SearchUserCommand;
 import home.hammefatal.msa.userservice.application.port.out.FindUserPort;
 import home.hammefatal.msa.userservice.domain.User;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RequiredArgsConstructor
-@Component
+@UserScenario
 public class FindUser implements FindUserService {
 
     private final FindUserPort findUserPort;
